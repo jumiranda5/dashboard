@@ -1,0 +1,18 @@
+
+.main-grid {
+    display: grid;
+    height: 100vh;
+    overflow: hidden;
+    grid-template-columns: 250px auto;
+}
+
+.sidebar {
+    height: auto;
+    background-color: #365fc7;
+}
+
+.content {
+    height: auto;
+    overflow: auto;
+    background-color: #f5f5f5;
+}
