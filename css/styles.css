@@ -53,3 +53,45 @@ li.icon-text-grid .icon {
     height: 24px;
     padding: 12px;
 }
+
+
+/* HEADER */
+
+header {
+    display: grid;
+    gap: 8px;
+    grid-template-columns: repeat(12, 1fr);
+    padding: 16px;
+    background-color: #ffffff;
+}
+
+header > div {
+    height: 48px;
+    background-color: aqua;
+}
+
+.span-icon {
+    grid-column: span 1;
+}
+
+.span-input {
+    grid-column: span 8;
+}
+
+.span-username,
+.span-user-info {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.span-username {
+    grid-column: span 3;
+}
+
+.span-user-info {
+    grid-column: span 6;
+}
+
+.span-button {
+    grid-column: span 2;
+}
