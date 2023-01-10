@@ -1,3 +1,7 @@
+:root {
+    font-family: 'Roboto', sans-serif;
+}
+
 /* MAIN */
 
 .main-grid {
@@ -22,7 +26,11 @@
 /* SIDEBAR */
 
 .sidebar {
-    padding: 16px;
+    color: #ffffff;
+}
+
+.app-title {
+    margin: 16px;
 }
 
 .icon-text-grid {
@@ -35,23 +43,35 @@
 .icon-text-grid p {
     margin: 0;
     line-height: 48px;
-    background-color: aqua;
+}
+
+.icon-text-grid h1 {
+    font-size: 1.5rem;
+    font-weight: 700;
 }
 
 .icon-text-grid .icon {
-    width: 48px;
-    height: 48px;
-    background-color: blueviolet;
+    width: 40px;
+    height: 40px;
+    padding: 4px;
 }
 
 .sidebar ul {
     margin-top: 40px;
 }
 
+li.icon-text-grid {
+    padding: 0 16px;
+}
+
 li.icon-text-grid .icon {
     width: 24px;
     height: 24px;
     padding: 12px;
+}
+
+.sidebar li:hover {
+    background-color: #2e4d9b;
 }
 
 
