@@ -57,10 +57,6 @@ button {
 
 /* SIDEBAR */
 
-.sidebar {
-    color: #ffffff;
-}
-
 .app-title {
     margin: 16px;
 }
@@ -75,11 +71,6 @@ button {
 .icon-text-grid p {
     margin: 0;
     line-height: 48px;
-}
-
-.icon-text-grid h1 {
-    font-size: 1.5rem;
-    font-weight: 700;
 }
 
 .icon-text-grid .icon {
@@ -154,9 +145,7 @@ header input {
 }
 
 .span-username p {
-    font-weight: 700;
     line-height: 48px;
-    font-size: 1rem;
     margin-left: 12px;
 }
 
@@ -177,16 +166,7 @@ header input {
     margin-left: 16px;
 }
 
-.user-info p {
-    font-weight: 700;
-}
-
-.user-info .text {
-    font-size: 0.75;
-}
-
 .user-info .user {
-    font-size: 1.25rem;
     margin-top: 4px;
 }
 
@@ -196,7 +176,6 @@ header input {
     margin: 12px 0;
     background-color: #365fc7;
     color: #ffffff;
-    font-weight: 700;
     border-radius: 20px;
 }
 
@@ -227,11 +206,6 @@ header input {
     background-color: pink;
 }
 
-.content-title {
-    font-size: 1.125rem;
-    font-weight: 700;
-}
-
 .projects .content-title {
     padding-left: 8px;
 }
@@ -249,4 +223,43 @@ header input {
     background-color: #FFFFFF;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     border-radius: 8px;
+}
+
+/* TYPOGRAPHY */
+
+.sidebar,
+.header-btn {
+    color: #ffffff;
+}
+
+.icon-text-grid h1,
+.span-username p,
+.user-info p,
+.header-btn,
+.content-title {
+    font-weight: 700;
+}
+
+.icon-text-grid h1 {
+    font-size: 1.5rem;
+}
+
+.span-username p {
+    font-size: 1rem;
+}
+
+.user-info .text {
+    font-size: 0.75;
+}
+
+.user-info .user {
+    font-size: 1.25rem;
+}
+
+.header-btn {
+    font-size: 1rem;
+}
+
+.content-title {
+    font-size: 1.125rem;
 }
