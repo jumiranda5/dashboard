@@ -137,8 +137,9 @@ header {
 }
 
 header input {
-    width: 70%;
+    width: 80%;
     height: 32px;
+    margin-left: 8px;
     border-radius: 16px;
     border: 1px solid #dadada;
     background-color: #eeeeee;
@@ -185,7 +186,7 @@ header input {
 .content-main {
     display: grid;
     grid-template-columns: minmax(360px, 3fr) minmax(360px, 1fr);
-    padding: 24px;
+    padding: 40px 24px;
 }
 
 .projects-grid {
@@ -197,10 +198,6 @@ header input {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
-.projects {
-    background-color: palegreen;
-}
-
 .extras {
     padding: 0 8px 0 16px;
     background-color: pink;
@@ -208,10 +205,11 @@ header input {
 
 .projects .content-title {
     padding-left: 8px;
+    margin-bottom: 8px;
 }
 
 .extras .content-title {
-    margin-bottom: 8px;
+    margin-bottom: 16px;
 }
 
 .extras > div {
@@ -225,6 +223,45 @@ header input {
     border-radius: 8px;
 }
 
+.projects .card {
+    border-left: 8px solid #fe885d;
+    padding: 16px 32px;
+}
+
+.projects-grid .card h2 {
+    margin-top: 16px;
+}
+
+.projects-grid .card p {
+    margin-top: 8px;
+    display: -webkit-box;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    line-clamp: 5;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+    height: 82px;
+    line-height: 1.15;
+    color: #626262;
+}
+
+.button-div {
+    text-align: end;
+    margin-top: 16px;
+}
+
+.button-div button {
+    width: 48px;
+    height: 48px;
+    padding: 0;
+}
+
+.button-div button img {
+    width: 100%;
+    height: 100%;
+    padding: 12px;
+}
+
 /* TYPOGRAPHY */
 
 .sidebar,
@@ -236,7 +273,8 @@ header input {
 .span-username p,
 .user-info p,
 .header-btn,
-.content-title {
+.content-title,
+.projects h2 {
     font-weight: 700;
 }
 
@@ -244,12 +282,14 @@ header input {
     font-size: 1.5rem;
 }
 
-.span-username p {
+.span-username p,
+.projects h2 {
     font-size: 1rem;
 }
 
-.user-info .text {
-    font-size: 0.75;
+.user-info .text,
+.projects-grid .card p {
+    font-size: 0.875rem;
 }
 
 .user-info .user {
