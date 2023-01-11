@@ -212,7 +212,7 @@ header input {
 }
 
 .extras > div {
-    margin-bottom: 32px;
+    margin-bottom: 54px;
 }
 
 .card {
@@ -237,7 +237,7 @@ header input {
     overflow: hidden;
     text-overflow: ellipsis;
     line-height: 1.15;
-    color: #6b6b6b;
+    color: #707070;
 }
 
 .projects-grid .card p {
@@ -286,6 +286,22 @@ header input {
     margin-top: 6px;
 }
 
+.trending li {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.trending-user {
+    margin-left: 16px;
+}
+
+.trending-info {
+    margin-top: 4px;
+    color: #707070;
+}
+
 /* TYPOGRAPHY */
 
 .sidebar,
@@ -299,7 +315,8 @@ header input {
 .header-btn,
 .content-title,
 .projects h2,
-.extras h2 {
+.extras h2,
+.trending-username {
     font-weight: 700;
 }
 
@@ -324,6 +341,7 @@ header input {
 .user-info .text,
 .projects-grid .card p,
 .announcements h2,
-.announcements p {
+.announcements p,
+.trending-info {
     font-size: 0.875rem;
 }
