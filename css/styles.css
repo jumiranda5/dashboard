@@ -192,15 +192,14 @@ header input {
 .projects-grid {
     overflow: auto;
     display: grid;
-    gap: 24px;
+    gap: 32px;
     padding: 8px;
     grid-template-rows: repeat(auto-fit, 1fr);
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
 .extras {
-    padding: 0 8px 0 16px;
-    background-color: pink;
+    padding: 0 8px 0 24px;
 }
 
 .projects .content-title {
@@ -232,17 +231,21 @@ header input {
     margin-top: 16px;
 }
 
-.projects-grid .card p {
-    margin-top: 8px;
+.projects-grid .card p,
+.announcements p {
     display: -webkit-box;
     overflow: hidden;
     text-overflow: ellipsis;
+    line-height: 1.15;
+    color: #6b6b6b;
+}
+
+.projects-grid .card p {
+    margin-top: 8px;
     line-clamp: 5;
     -webkit-line-clamp: 5;
     -webkit-box-orient: vertical;
     height: 82px;
-    line-height: 1.15;
-    color: #626262;
 }
 
 .button-div {
@@ -262,6 +265,27 @@ header input {
     padding: 12px;
 }
 
+.extras .card {
+    padding: 16px 32px;
+}
+
+.announcements li {
+    padding: 16px 0;
+}
+
+.announcements li:nth-child(1),
+.announcements li:nth-child(2) {
+    border-bottom: 1px solid #dadada;
+} 
+
+.announcements p {
+    line-clamp: 3;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    height: 48px;
+    margin-top: 6px;
+}
+
 /* TYPOGRAPHY */
 
 .sidebar,
@@ -274,7 +298,8 @@ header input {
 .user-info p,
 .header-btn,
 .content-title,
-.projects h2 {
+.projects h2,
+.extras h2 {
     font-weight: 700;
 }
 
@@ -282,24 +307,23 @@ header input {
     font-size: 1.5rem;
 }
 
-.span-username p,
-.projects h2 {
-    font-size: 1rem;
-}
-
-.user-info .text,
-.projects-grid .card p {
-    font-size: 0.875rem;
-}
-
 .user-info .user {
     font-size: 1.25rem;
 }
 
+.content-title {
+    font-size: 1.125rem;
+}
+
+.span-username p,
+.projects h2,
 .header-btn {
     font-size: 1rem;
 }
 
-.content-title {
-    font-size: 1.125rem;
+.user-info .text,
+.projects-grid .card p,
+.announcements h2,
+.announcements p {
+    font-size: 0.875rem;
 }
